@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html>
+
+  <head>
+
+    <title>First App</title>
+
+  <script src="cordova-2.5.0.js"></script>
+  <script type="text/javascript" src="jquery.min.js"></script>
+
+  <script>
+
+     function onLoad(){
+
+          document.addEventListener("deviceready",
+onDeviceReady, true);
+
+     }
+
+     function onDeviceReady(){
+navigator.notification.alert("PhoneGap is working!!");
+
+     }
+
+</script>
+<script>
+$(document).ready(function(){
+	
+
+	$("#b1").click(function() {
+			navigator.notification.alert("Button click is working!!");
+			
+						
+        });
+});
+
+  </script>
+
+  
+  </head>
+
+
+  <body onload="onLoad();">
+
+
+       <h1>Welcome to PhoneGap</h1>
+
+
+       <h2>Edit assets/www/index.html</h2>
+       <marquee>success</marquee>
+       <button id="b1">hello</button>
+       <a href="one.html">click me</a>
+
+
+  </body>
+
+
+</html>
